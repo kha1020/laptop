@@ -1,0 +1,27 @@
+/* src/pages/OrderHistory.css */
+.order-history-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .order-history-page h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .order-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .order-history-table th, .order-history-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .order-history-table th {
+    background-color: #f4f4f4;
+  }
+  

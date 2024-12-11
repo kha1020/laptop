@@ -1,0 +1,76 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Đảm bảo modal nằm trên cùng */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Chiều rộng của modal */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black; /* Đổi màu chữ thành màu đen */
+}
+
+.modal-image {
+  width: 80px; /* Hoặc kích thước phù hợp với thiết kế của bạn */
+  height: auto;
+  max-width: 100%; /* Giữ cho ảnh không tràn */
+  margin-bottom: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between; /* Căn giữa các nút */
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  margin: 10px;
+  padding: 8px 25px; /* Giảm padding cho nút thấp hơn */
+  border: none;
+  background-color: #007bff; /* Màu nền nút đăng xuất */
+  color: white; /* Màu chữ trong nút */
+  cursor: pointer;
+  border-radius: 20px; /* Bo góc nhiều hơn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+  font-size: 16px; /* Tăng kích thước chữ */
+  white-space: nowrap; /* Ngăn chữ bị xuống dòng */
+}
+
+.modal-actions button:hover {
+  background-color: #0056b3; /* Màu hover cho nút đăng xuất */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Đổ bóng lớn hơn khi hover */
+  transform: translateY(-2px); /* Hiệu ứng nổi lên khi hover */
+}
+
+.modal-actions button:active {
+  background-color: #004494; /* Màu khi nút được nhấn */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Giảm đổ bóng khi nút được nhấn */
+  transform: translateY(0); /* Nút quay về vị trí ban đầu khi nhấn */
+}
+
+/* Thay đổi màu nền cho nút hủy */
+.modal-actions button:nth-child(2) {
+  background-color: white; /* Nền trắng cho nút hủy */
+  color: black; /* Màu chữ đen cho nút hủy */
+  border: 1px solid #007bff; /* Đường viền màu xanh cho nút hủy */
+}
+
+.modal-actions button:nth-child(2):hover {
+  background-color: #f8f9fa; /* Nền sáng hơn khi hover */
+}

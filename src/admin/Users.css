@@ -1,0 +1,105 @@
+.add-user-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  .add-user-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Add spacing between input fields */
+    transition: border-color 0.3s ease;
+    width: 100%; /* Make inputs take full width */
+    max-width: 300px; /* Limit width to prevent form from being too wide */
+  }
+  
+  .add-user-form input:focus {
+    border-color: #3498db; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  .add-user-form button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button take full width */
+    max-width: 300px; /* Match button width with inputs */
+  }
+  
+  .add-user-form button:hover {
+    background-color: #2980b9; /* Change button color on hover */
+  }
+  
+  .add-user-form img {
+    margin-top: 10px;
+    width: 80px; /* Adjust the image width */
+    height: 80px; /* Adjust the image height */
+    object-fit: cover; /* Ensure the image fits nicely within the bounds */
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 80%; /* Set table width to 80% of its container */
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center the table horizontally and add space around it */
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Bold table headers */
+  }
+  
+  td {
+    background-color: #ffffff; /* Data cell background color */
+    transition: background-color 0.3s ease;
+  }
+  
+  td:hover {
+    background-color: #f9f9f9; /* Hover effect for data cells */
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Color for even rows */
+  }
+  
+  td img {
+    width: 50px; /* Adjust image size in table */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px; /* Ensure rounded corners */
+  }
+  
+  @media (max-width: 600px) {
+    /* Adjust form layout for smaller screens */
+    .add-user-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .add-user-form input,
+    .add-user-form button {
+      max-width: 100%;
+    }
+  
+    table {
+      font-size: 14px; /* Slightly smaller text on mobile */
+      width: 95%; /* Make table more responsive on small screens */
+    }
+  }
+  

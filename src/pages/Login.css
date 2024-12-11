@@ -1,0 +1,154 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .login-container {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .logo-section {
+    width: 50%; /* Logo occupies the left half */
+    background-color: #e0e0e0; /* Change background color as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-section img {
+    max-width: 80%; /* Limit logo size */
+    max-height: 80%; /* Ensure logo doesn't overflow */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  
+  .form-section {
+    width: 50%; /* Form occupies the right half */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .password-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Ensure consistent font size */
+  }
+  
+  .forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  button:disabled {
+    background-color: #ccc; /* Background when disabled */
+    cursor: not-allowed; /* Change cursor when disabled */
+  }
+  
+  .register {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .register p {
+    margin: 0;
+  }
+  
+  .register a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register a:hover {
+    text-decoration: underline;
+  }
+  
+  .password-input {
+    margin: 15px 0;
+  }
+  
+  .password-input label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .password-field {
+    position: relative; /* For positioning the eye icon */
+  }
+  
+  .password-input input {
+    width: 100%; /* Ensure full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove outline */
+  }
+  
+  .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Spacing from the right */
+    transform: translateY(-50%); /* Center vertically */
+    cursor: pointer; /* Cursor style on hover */
+    font-size: 20px; /* Icon size */
+  }
+  
+  .password-input input.invalid {
+    border-color: red; /* Change border color for invalid input */
+  }
+  
+  .error-message {
+    color: red; /* Color for error message */
+    font-size: 12px; /* Font size for error message */
+  }
+  

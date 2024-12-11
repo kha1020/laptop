@@ -1,0 +1,99 @@
+/* Định dạng cho banner */
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Optional: Adjust based on your design */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Nút mũi tên chuyển banner */
+.banner-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem; /* Giảm kích thước font chữ */
+  padding: 8px 12px; /* Giảm padding để nút nhỏ hơn */
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+  border-radius: 50%; /* Tạo nút tròn */
+}
+
+/* Nút mũi tên hover */
+.banner-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Tối màu nền khi hover */
+}
+
+/* Đưa nút mũi tên trái sang bên trái */
+.banner-btn-left {
+  left: 10px; /* Đặt nút chuyển trái bên trái */
+}
+
+/* Đưa nút mũi tên phải sang bên phải */
+.banner-btn-right {
+  right: 10px; /* Đặt nút chuyển phải bên phải */
+}
+
+/* Lọc sản phẩm */
+/* Filter and Product List Layout */
+.filter-and-product-list {
+  display: flex;
+  justify-content: space-between; /* Đảm bảo bộ lọc và sản phẩm ở hai bên */
+  margin-top: 20px;
+}
+
+/* Filter Container Styling */
+.filter-container {
+  display: flex;
+  align-items: flex-start; /* Canh giữa các mục lọc */
+  flex-direction: column; /* Xếp các input theo chiều dọc */
+  width: 25%; /* Điều chỉnh độ rộng của bộ lọc */
+  padding: 20px; /* Thêm padding bên trong container */
+  background-color: #f8f9fa; /* Màu nền sáng */
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng nhẹ cho hiệu ứng 3D */
+}
+
+/* Input and Select Styling */
+.filter-container input,
+.filter-container select {
+  padding: 5px 10px;
+  margin-bottom: 10px; /* Thêm khoảng cách giữa các input */
+  border-radius: 4px;
+  width: 100%; /* Đảm bảo input và select chiếm toàn bộ chiều rộng container */
+  border: 1px solid #ccc; /* Màu viền nhẹ */
+  background-color: #fff; /* Nền trắng cho input */
+}
+
+/* Button Styling */
+.filter-container button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 50%; /* Đặt chiều rộng của nút ngắn lại */
+  font-size: 16px; /* Kích thước font chữ lớn hơn một chút */
+  align-self: center; /* Căn giữa nút */
+}
+
+/* Button Hover Effect */
+.filter-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+  margin-top: 20px;
+}

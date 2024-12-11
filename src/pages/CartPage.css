@@ -1,0 +1,134 @@
+.cart-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout-btn {
+  padding: 6px 12px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  width: auto;
+  float: right;
+}
+
+.checkout-btn:hover {
+  background-color: darkgreen;
+}
+
+.cart-table td button {
+  margin: 0 6px;
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-table td button:hover {
+  background-color: #ddd;
+}
+
+.cart-table td button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.cart-table td {
+  font-size: 14px;
+}
+
+.cart-summary p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Chỉnh sửa các nút tăng giảm */
+.quantity-btns {
+  display: flex; /* Dùng flexbox để đặt các nút vào một hàng */
+  justify-content: center; /* Căn giữa các nút */
+  align-items: center; /* Căn giữa các nút theo chiều dọc */
+}
+
+.quantity-btns button {
+  padding: 4px 8px;
+  margin: 0 2px;
+  background-color: #d0d0d0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btns button:hover {
+  background-color: #b0b0b0;
+}
+
+/* Chỉnh màu của các nút tăng, giảm và xóa */
+.cart-table td .increase-btn {
+  background-color: #4caf50; /* Xanh lá */
+}
+
+.cart-table td .decrease-btn {
+  background-color: #ff9800; /* Cam */
+}
+
+.cart-table td .remove-btn {
+  background-color: red; /* Đỏ */
+}
+
+.cart-table td .increase-btn:hover {
+  background-color: #45a049;
+}
+
+.cart-table td .decrease-btn:hover {
+  background-color: #fb8c00;
+}
+
+.cart-table td .remove-btn:hover {
+  background-color: darkred;
+}

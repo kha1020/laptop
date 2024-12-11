@@ -1,0 +1,80 @@
+.dashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center; /* Ensure the header is centered */
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%; /* Ensure stats section takes up full width */
+  max-width: 1200px; /* Limit the max width */
+  gap: 20px; /* Space between stat cards */
+}
+
+.stat-card {
+  background-color: #f3f3f3;
+  padding: 20px;
+  width: 23%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.chart {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the chart section */
+}
+
+.chart h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the chart title */
+}
+
+.recent-activity h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the recent activity title */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f3f3f3;
+}

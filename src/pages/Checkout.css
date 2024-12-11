@@ -1,0 +1,45 @@
+.checkout-page {
+    padding: 20px;
+  }
+  
+  .checkout-details {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th, .cart-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .shipping-info input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+  }
+  
+  .payment-method label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .submit-order {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .submit-order:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,191 @@
+/* Cấu trúc tổng thể của header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 70px; /* Đảm bảo chiều cao phù hợp */
+}
+
+/* Logo nằm góc bên trái */
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Đảm bảo logo căn giữa theo chiều dọc */
+}
+
+.logo-image {
+    height: 40px; /* Chiều cao logo */
+    object-fit: contain; /* Đảm bảo logo không bị biến dạng */
+}
+
+
+/* Thanh tìm kiếm */
+.search-container {
+    display: flex;
+    align-items: center;  /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa thanh tìm kiếm */
+    flex: 1;
+    margin: 0 auto;
+    max-width: 500px;  /* Điều chỉnh chiều rộng tối đa của thanh tìm kiếm */
+    gap: 10px;  /* Khoảng cách giữa ô nhập và nút tìm kiếm */
+}
+
+/* Ô nhập tìm kiếm */
+.search-input {
+    flex: 1;  /* Làm cho ô nhập chiếm toàn bộ không gian còn lại */
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    outline: none;
+    max-width: 400px; /* Chiều rộng tối đa của ô nhập */
+}
+
+/* Nút tìm kiếm */
+.search-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icon trong nút tìm kiếm */
+.search-button i {
+    font-size: 16px;
+}
+
+
+/* Các biểu tượng tài khoản và giỏ hàng */
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.header-icons i {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.account-icon i {
+    color: #007bff; /* Màu cho icon tài khoản */
+}
+
+.account-icon, .cart-icon {
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Menu xổ xuống */
+.account-menu {
+    position: absolute;
+    top: 70px; /* Đặt vị trí menu ngay dưới header */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 10;
+    display: none; /* Menu không hiển thị mặc định */
+}
+
+/* Menu hiển thị khi có class isOpen */
+.account-menu.isOpen {
+    display: block; /* Hiển thị menu khi có class isOpen */
+}
+
+.account-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.account-menu ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.account-menu ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hiệu ứng phóng to icon tài khoản khi hover */
+.account-icon:hover {
+    transform: scale(1.1);
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+/* Modal xác nhận đăng xuất */
+.logout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Đảm bảo modal nằm trên các phần tử khác */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-actions button:hover {
+    opacity: 0.8;
+}
+
+.modal-actions button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-actions button:last-child {
+    background-color: #ccc;
+}

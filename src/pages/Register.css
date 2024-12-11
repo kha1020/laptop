@@ -1,0 +1,119 @@
+/* Register Page Styles */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.register-container {
+  display: flex; /* Flex layout to split image and form */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Adjust width for better layout */
+  padding: 40px;
+}
+
+.logo-section {
+  width: 50%; /* Image section takes up 50% */
+  background-color: #e0e0e0; /* Background color for logo section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section img {
+  max-width: 80%; /* Limit image size */
+  max-height: 80%; /* Ensure image fits properly */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.form-section {
+  width: 50%; /* Form section takes up 50% */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading and Form Styles */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container .eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #45a049;
+}
+
+/* Register Link Section */
+.register p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.register a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
